@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Error</title>
+  </head>
+  <!-- EVENTO DE JANELA -->
+  <!-- funciona toda vez que algum erro acontecer quando carregamos a pagina  -->
+  <body>
+    <img src="../Secao3-Tags/djkfhdjfh" alt="circulo" onerror="debug(event)" />
+    <script>
+      function debug(e) {
+        console.log("Evento:" + e.type);
+        alert("Evento:" + e.type);
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>focus</title>
+  </head>
+  <!-- EVENTO DE FORMULARIO -->
+  <!-- ocorre quando damos o foco dentro do formulario. Ou seja, se clicarmos dentro do formulario ele vai. A mesma coisa com o tab -->
+
+  <body>
+    <input type="text" onfocus="debug(event)" />
+    <script>
+      function debug(e) {
+        console.log("Evento:" + e.type);
+      }
+    </script>
+  </body>
+</html>

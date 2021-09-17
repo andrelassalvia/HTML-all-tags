@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link</title>
+
+    <!--Define um estilo geral de css para a pagina.O arquivo stile.css pode ter todos os css que serao carregados na pagina-->
+    <link rel="stylesheet" href="style.css" type="text/css">
+
+    <!--Define o icone que aparecera no cabecalho da pagina. Util quando salvamos uma pagina em favoritos-->
+    <link rel="shortcut icon" href="https://hcode.com.br/icon_192.png" type="image/x-icon">
+    
+    <!--O alternate serve para fornecer uma versao alternativa da nossa pagina-->
+    <link rel="alternate" type="application/json" title="versao em json" href="link.json">
+
+    <!--O link author é diferente do meta author. O meta define o nome do author da pagina, o link redireciona para uma outra pagina do author na internet-->
+    <link rel="author" href="https://www.hcode.com.br">
+
+    <!--dns-prefetch ajuda na aceleracao da navegacao da pagina. Utilizada quando o usuario clica em um link dentro de uma pagina para redirecionar a uma outra pagina. O navegador ja deixa a outra pagina pronta enquanto carrega o head-->
+    <link rel="dns-prefetch" href="https://www.hcode.com.br">
+
+    <!--Help fornece uma pagina de ajuda (documentacao, instrucao) para a utilizacao da pagina-->
+    <link rel="help" href="help.html">
+
+    <!--link que aponta para a licenca das informacoes que constam na pagina-->
+    <link rel="license" href="license.html">
+
+    <!--next ajuda o navegador a encontrar o proximo link de navegacao. O navegador ja prepara a proxima pagina que devera ser navegada-->
+    <link rel="next" href="page_2.html">
+    <link rel="prev" href="page_1.html">
+
+    <!--O prefetch sozinho nao tenta consultar o dns. Ele vai alem e solicita a propria pagina. -->
+    <link rel="prefetch" href="https://www.hcode.com.br">
+
+    <!--O preconnect vai alem do prefetch e ja tenta conectar a pagina. Assim como os anteriores, nao precisa ser somente html. Pode ser um arquivo de imagem por exemplo -->
+    <link rel="preconnect" href="https://www.hcode.com.br">
+
+    <!-- serve para fazer ium ping em outro site. util para fazer algo analitico. -->
+    <link rel="pingback" href="https://www.hcode.com.br">
+
+    <!--Parecido com os prefetch mas nesse caso ele vai carregar a pagina solicitada em segundo plano -->
+    <link rel="preload" href="https://www.hcode.com.br">
+
+    <!--util para desenhar a proxima pagina na tela sem carrega-la-->
+    <link rel="prerender" href="https://www.hcode.com.br">
+
+    <!--esta é a pagina do meu site. Mas se vc quiser buscar alguma coisa, esta neste link de referencia-->
+    <link rel="search" href="https://www.hcode.com.br/search">
+
+
+
+
+
+
+</head>
+<body>
+
+    <ul>
+        <li>
+            <img src="image.jpg" alt="Foto">
+        </li>
+        <li>
+            <img src="image.jpg" alt="Foto">
+        </li>
+    </ul>
+    
+</body>
+</html>

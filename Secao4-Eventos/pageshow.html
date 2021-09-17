@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>pageshow</title>
+  </head>
+  <!-- EVENTO DE JANELA -->
+  <!-- Parecido com o Load mas com a diferenca que load tem a ver mais com os dados de rede e internet e o pageshow com os dados da pagina em si, com a visibilidade da tela.  -->
+  <body onpageshow="debug(event)">
+    <script>
+      function debug(e) {
+        console.log("Evento:" + e.type);
+        alert("Evento:" + e.type);
+      }
+    </script>
+  </body>
+</html>

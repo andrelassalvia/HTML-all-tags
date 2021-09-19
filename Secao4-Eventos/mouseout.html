@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>mouse out</title>
+    <style>
+      div {
+        height: 200px;
+        width: auto;
+        background-color: red;
+      }
+    </style>
+  </head>
+  <!-- EVENTO DE MOUSE -->
+  <!--  mouse out quando o mouse sai de um elemento.-->
+  <!--  mouse up quando o botao do mouse levanta.-->
+  <!--  mouseover quando passamos o mouse sobre obejto.-->
+  <body onmousemove="debug(event)">
+    <div
+      onmouseout="debug(event)"
+      onmouseover="debug(event)"
+      onmouseup="debug(event)"
+    ></div>
+    <script>
+      function debug(e) {
+        e.stopPropagation(); // evita que um clique no botao se propague tbem pelo body
+        console.log("Evento:" + e.type);
+      }
+    </script>
+  </body>
+</html>

@@ -4,14 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>drag</title>
+    <title>dragover</title>
     <style>
-      div {
+      #drag {
         height: 200px;
         width: 25%;
         background-color: red;
       }
-      #from {
+      #target {
         height: 200px;
         width: 25%;
         background-color: yellow;
@@ -19,8 +19,18 @@
     </style>
   </head>
   <body>
-    <div ondragenter="debug(event)" draggable="true"></div>
-    <div id="from" draggable="true"></div>
+    <div
+      id="drag"
+      ondrag="debug(event)"
+      ondragend="debug(event)"
+      draggable="true"
+    ></div>
+    <div
+      id="target"
+      ondragenter="debug(event)"
+      ondragleave="debug(event)"
+      ondragover="debug(event)"
+    ></div>
     <script>
       function debug(e) {
         console.log("Evento:" + e.type);
